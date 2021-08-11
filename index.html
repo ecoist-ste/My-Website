@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Index page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      display: block;
+
+    }
+
+    .hello-section-bg {
+      background-image: url('img/bg.jpg');
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    h1 {
+      font-size: 2.75em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #ffffff;
+      font-weight: bold;
+      line-height: 1.5;
+      margin: 0 0 0.5em 0;
+    }
+
+    .image {
+      border-radius: 0.25em;
+      border: 0;
+      display: inline-block;
+      position: relative;
+    }
+
+    .image.right {
+      float: right;
+      margin: 0 0 1em 1.5em;
+      top: 0.25em;
+
+    }
+
+    .contest {
+      display: inline-block;
+      border: 2px solid white;
+      border-radius: 5px;
+      height: 500px;
+      width: 40%;
+      background-color: rgb(186, 88, 151);
+      padding-left: 40px;
+      padding-right: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 240px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(48, 37, 78);
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      text-decoration: none;
+      font-size: 20px;
+      font-family: cursive;
+      color: #818181;
+      filter: brightness(1.75);
+      display: block;
+      /* text-decoration: underline;
+  text-underline-position: under; */
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .main {
+      margin-left: 240px;
+      /* Same as the width of the sidenav */
+      height: 100%;
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+
+
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidenav">
+    <a href="#hello" style="position:relative; top:20%; left: 60%">Hello</a>
+    <a href="#activity" style="position:relative; top:30%;left: 60%">Activities</a>
+    <a href="#contest" style="position:relative; top:40%;left: 60%">Contests</a>
+    <a href="#contact" style="position:relative; top:50%;left: 60%">Contact</a>
+  </div>
+
+  <div class="main" style="background-color: rgb(94,66,166); height:100%">
+
+
+    <!-- hello section -->
+    <div class="hello-section-bg" id="hello">
+      <br><br><br><br><br><br><br>
+      <span style="max-width:50%" class="image right"><img src="img/me2.png" width="480" height="337" style="border-radius: 10px;position:relative;right:20%">
+      </span>
+
+      <h1 style="position:relative;left:7%;">Steven Lew</h1>
+
+      <p style="color:rgba(255, 255, 255, 0.55);display: block;position:relative;left:12%">AP student, @ <a href="http://www.scaleapi.com" style="color:rgba(255, 255, 255, 0.55)">CQYC</a></p>
+
+      <br><br><br><br><br><br>
+
+      <button onClick="document.getElementById('activity').scrollIntoView();" type="button" class="btn btn-outline-light outer" style="position:relative;left:15%;border-radius: 15px;font-size:22px;filter:brightness(100%)">Meet me</button>
+      <br><br><br><br><br><br><br>
+
+    </div>
+
+    <!-- Activity section -->
+
+    <!-- project1:himcm -->
+    <div id="activity" style="background-color:rgb(80,82,181)">
+      <div style="padding-right:100px">
+        <img src="img/himcm.jpg" width="384.91" height="390" align="left" style="float:left; margin-left:-20px"><br><br>
+        <h2 style="color: #ffffff;position:relative;left:8%; font-family:candara">Financial plan for FSPA</h2>
+        <p style="color: #ffffff;position:relative;left:8%; font-family:candara; padding-right:50px">Used genetic algorithm to produce the optimal choice for the investment in protection of endangered plants.</p>
+        <br><br>
+        <button type="button" class="btn btn-outline-warning" style="position:relative;left:10%" target="_blank" onclick="window.open('https://www.rapidtables.com/web/html/link/html-link-new-window.html')">The paper</button> &nbsp;&nbsp;&nbsp;<button
+          type="button" class="btn btn-outline-warning" style="position:relative;left:10%">Learn more about FSPA</button>
+      </div>
+      <br><br><br><br>
+      <hr>
+
+      <!-- project2:丘成桐 -->
+      <div style="padding-right:100px">
+        <img src="img/qct.jpg" width="384.91" height="390" align="left" style="float:left; margin-left:-20px"><br><br>
+        <h2 style="color: #ffffff;position:relative;left:8%; font-family:candara">Study of corrugated tube</h2>
+        <p style="color: #ffffff;position:relative;left:8%; font-family:candara; padding-right:50px">Used physical principles to explain why rotating corrugated tube makes sounds</p>
+        <br><br>
+        <button type="button" class="btn btn-outline-warning" style="position:relative;left:10%" target="_blank" onclick="window.open('https://www.rapidtables.com/web/html/link/html-link-new-window.html')">The paper</button> &nbsp;&nbsp;&nbsp;<button
+          type="button" class="btn btn-outline-warning" style="position:relative;left:10%">Video of sounding tube</button>
+      </div>
+      <br><br><br><br>
+      <hr>
+
+      <!-- project3:yic -->
+      <div style="padding-right:100px">
+        <img src="img/yic.jpg" width="384.91" height="390" align="left" style="float:left; margin-left:-20px"><br><br>
+        <h2 style="color: #ffffff;position:relative;left:8%; font-family:candara">Eco-experience facility</h2>
+        <p style="color: #ffffff;position:relative;left:8%; font-family:candara;">Designed a 3d model for eco-facility allowing involvement of audience's full senses.</p>
+        <br><br>
+        <button type="button" class="btn btn-outline-warning" style="position:relative;left:10%" target="_blank" onclick="window.open('https://www.rapidtables.com/web/html/link/html-link-new-window.html')">The paper</button> &nbsp;&nbsp;&nbsp;<button
+          type="button" class="btn btn-outline-warning" style="position:relative;left:10%">The 3d model</button>
+      </div>
+      <br><br><br><br>
+      <hr>
+
+      <!-- project4:云南 -->
+      <div style="padding-right:100px">
+        <img src="img/yn.jpg" width="384.91" height="390" align="left" style="float:left; margin-left:-20px"><br><br>
+        <h2 style="color: #ffffff;position:relative;left:8%; font-family:candara">Research on self-designed water filter</h2>
+        <p style="color: #ffffff;position:relative;left:8%; font-family:candara; padding-right:50px">Went to Yunnan, China to test our facility by local contaminated water.</p>
+        <br><br>
+        <button type="button" class="btn btn-outline-warning" style="position:relative;left:10%" target="_blank" onclick="window.open('https://www.rapidtables.com/web/html/link/html-link-new-window.html')">WeChat Official Account (Chinese)</button>
+        &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-outline-warning" style="position:relative;left:10%">Our traces in Yunnan</button>
+      </div>
+      <br><br><br><br>
+      <br>
+    </div>
+    <!-- Contest section -->
+    <div id="contest" style="background-color:rgb(183,78,145)">
+
+
+      <br><br>
+      <div class="contest" style="position:relative;left:5%;">
+        <h4 style="color:#ffffff; filter: brightness(1);">HIMCM</h4>
+        <p style="color:#ffffff; filter: brightness(0.9);">Here describe what's this contest and how many teams have participated every year.Besides, specfically describe how the wining process works. In other words, how many people or how many
+          percentage of teams or participants can gain your award.</p>
+        <a href="https://www.comap.com/highschool/contests/himcm/index.html" style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">Learn more</a> &nbsp;&nbsp;&nbsp; <a href="https://www.comap.com/highschool/contests/himcm/index.html"
+          style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">My certificate</a>
+
+      </div>
+      <div class="contest" style="position:relative;left:10%">
+        <h4 style="color:#ffffff;filter: brightness(1);">YIC </h4>
+        <p style="color:#ffffff; filter: brightness(0.9);">Here describe what's this contest and how many teams have participated every year.Besides, specfically describe how the wining process works. In other words, how many people or how many
+          percentage of teams or participants can gain your award.</p>
+
+        <a href="https://www.comap.com/highschool/contests/himcm/index.html" style="text-decoration: none;color:#ffffff; filter: brightness(0.9);">Learn more</a> &nbsp;&nbsp;&nbsp; <a href="https://www.comap.com/highschool/contests/himcm/index.html"
+          style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">My certificate</a>
+      </div>
+      <hr>
+      <div class="contest" style="position:relative;left:5%;">
+        <h4 style="color:#ffffff; filter: brightness(1);">Shi-Tung Yau Science Award</h4>
+        <p style="color:#ffffff; filter: brightness(0.9);">Here describe what's this contest and how many teams have participated every year.Besides, specfically describe how the wining process works. In other words, how many people or how many
+          percentage of teams or participants can gain your award.</p>
+        <a href="https://www.comap.com/highschool/contests/himcm/index.html" style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">Learn more</a> &nbsp;&nbsp;&nbsp; <a href="https://www.comap.com/highschool/contests/himcm/index.html"
+          style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">My certificate</a>
+      </div>
+      <div class="contest" style="position:relative;left:10%">
+        <h4 style="color:#ffffff;filter: brightness(1);">Envirothon</h4>
+        <p style="color:#ffffff; filter: brightness(0.9);">Here describe what's this contest and how many teams have participated every year.Besides, specfically describe how the wining process works. In other words, how many people or how many
+          percentage of teams or participants can gain your award.</p>
+        <a href="https://www.comap.com/highschool/contests/himcm/index.html" style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">Learn more</a> &nbsp;&nbsp;&nbsp; <a href="https://www.comap.com/highschool/contests/himcm/index.html"
+          style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">My certificate</a>
+      </div>
+      <hr>
+      <div class="contest" style="position:relative;left:5%">
+        <h4 style="color:#ffffff;filter: brightness(1);">FBLA</h4>
+        <p style="color:#ffffff; filter: brightness(0.9);">Here describe what's this contest and how many teams have participated every year.Besides, specfically describe how the wining process works. In other words, how many people or how many
+          percentage of teams or participants can gain your award.</p>
+        <a href="https://www.comap.com/highschool/contests/himcm/index.html" style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">Learn more</a> &nbsp;&nbsp;&nbsp; <a href="https://www.comap.com/highschool/contests/himcm/index.html"
+          style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">My certificate</a>
+      </div>
+      <div class="contest" style="position:relative;left:10%">
+        <h4 style="color:#ffffff;filter: brightness(1);">USAD</h4>
+        <p style="color:#ffffff; filter: brightness(0.9);">Here describe what's this contest and how many teams have participated every year.Besides, specfically describe how the wining process works. In other words, how many people or how many
+          percentage of teams or participants can gain your award.</p>
+        <a href="https://www.comap.com/highschool/contests/himcm/index.html" style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">Learn more</a> &nbsp;&nbsp;&nbsp; <a href="https://www.comap.com/highschool/contests/himcm/index.html"
+          style="text-decoration: none;color:#ffffff; filter: brightness(0.9)">My certificate</a>
+      </div>
+      <br><br>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+      <h1>Contact me</h1>
+      <br><br>
+      <a href="mailto: lsystevee@gmail.com" style="text-decoration: none;color:#ffffff; position:relative;left:10%">
+        <h3>Communicate with me through email</h3>
+      </a>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+</body>
+
+
+
+
+</html>
